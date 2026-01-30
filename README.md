@@ -1,11 +1,24 @@
-# 🐕 itdog-client
+# 🐕 clawdbot-skill-itdog
 
-> itdog.cn 网络测速工具 Python API 客户端
+> Clawdbot Skill: itdog.cn 网络测速工具
 
+[![Clawdbot Skill](https://img.shields.io/badge/Clawdbot-Skill-purple.svg)](https://github.com/clawdbot/clawdbot)
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-纯 Python 实现，无需浏览器，支持从全国/海外节点进行 Ping 测试和 HTTP 网站测速。
+这是一个 [Clawdbot](https://github.com/clawdbot/clawdbot) 技能插件，提供 itdog.cn 网络测速功能。纯 Python 实现，无需浏览器，支持从全国/海外节点进行 Ping 测试和 HTTP 网站测速。
+
+## 📦 安装
+
+```bash
+clawdbot skill add 6Kmfi6HP/clawdbot-skill-itdog
+```
+
+或手动克隆到 skills 目录：
+```bash
+cd ~/.clawdbot/skills
+git clone https://github.com/6Kmfi6HP/clawdbot-skill-itdog.git itdog
+```
 
 ## ✨ 功能特性
 
@@ -15,42 +28,32 @@
 - ⚡ **实时结果** - 通过 WebSocket 实时接收测速数据
 - 📊 **多节点支持** - 覆盖三大运营商 + 海外节点
 
-## 📦 安装
+## 🎯 触发词
 
-```bash
-pip install requests websockets
+在 Clawdbot 中使用以下关键词触发此技能：
+
+- `itdog`
+- `网络测速`
+- `ping测试`
+- `批量ping`
+- `http测速`
+- `cloudflare优选`
+- `延迟测试`
+
+## 💬 使用示例
+
 ```
+用户: 帮我用 itdog 测试一下 1.1.1.1 的延迟
 
-## 🚀 快速开始
+Clawdbot: 🚀 发起 Batch Ping 测试...
+目标: 1.1.1.1 (Cloudflare DNS)
+节点: 北京电信、北京联通、北京移动
 
-### Batch Ping
+✅ 北京电信: 85ms
+✅ 北京移动: 226ms
+✅ 北京联通: 287ms
 
-```python
-from scripts.itdog_client import batch_ping
-
-def on_result(r):
-    print(f"IP: {r['ip']}, 延迟: {r['result']}ms, 节点: {r['node_id']}")
-
-# 从北京三网节点测试 Cloudflare DNS
-batch_ping("1.1.1.1", "1310,1273,1250", on_result)
-```
-
-输出示例：
-```
-IP: 1.1.1.1, 延迟: 85ms, 节点: 1310
-IP: 1.1.1.1, 延迟: 226ms, 节点: 1250
-IP: 1.1.1.1, 延迟: 287ms, 节点: 1273
-```
-
-### HTTP 测速
-
-```python
-from scripts.itdog_client import http_test
-
-def on_result(r):
-    print(f"{r['name']}: {r['all_time']}s (HTTP {r['http_code']})")
-
-http_test("https://www.baidu.com", on_result)
+📊 测试完成
 ```
 
 ## 📍 常用节点
@@ -142,25 +145,6 @@ for r in sorted(results, key=lambda x: x['latency'])[:3]:
     print(f"{r['ip']}: {r['latency']}ms")
 ```
 
-### 网站可用性监控
-
-```python
-from scripts.itdog_client import http_test
-
-errors = []
-
-def check(r):
-    if r.get('http_code') != 200:
-        errors.append(f"{r['name']}: HTTP {r.get('http_code')}")
-
-http_test("https://your-website.com", check)
-
-if errors:
-    print("⚠️ 异常节点:", errors)
-else:
-    print("✅ 全部正常")
-```
-
 ## ⚠️ 注意事项
 
 1. **节点可用性**: 海外节点可能临时不可用，建议优先使用国内节点
@@ -178,3 +162,4 @@ MIT License
 ## 🙏 致谢
 
 - [itdog.cn](https://www.itdog.cn) - 提供测速服务
+- [Clawdbot](https://github.com/clawdbot/clawdbot) - AI Agent 框架
